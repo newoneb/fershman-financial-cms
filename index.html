@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fershman Financial | Elite Economic Journal</title>
+    <meta name="description" content="Fershman Financial - The premier economic journal for elite market insights and analysis">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">FF</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Mouse Follower -->
+    <div class="mouse-follower"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#" class="logo">Fershman Financial</a>
+            </div>
+            <div class="navbar-links">
+                <a href="#markets" class="nav-link">Markets</a>
+                <a href="#analysis" class="nav-link">Analysis</a>
+                <a href="#policy" class="nav-link">Policy & Regulation</a>
+                <a href="#opinion" class="nav-link">Opinion</a>
+                <a href="#subscribe" class="nav-link cta-small">Subscribe</a>
+            </div>
+            <div class="navbar-toggle">
+                <div class="toggle-icon"></div>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Beyond the Headlines.</span>
+                    <span class="title-line">Beyond the Markets.</span>
+                </h1>
+                <p class="hero-subtitle">Elite economic insights for the discerning investor</p>
+                <div class="hero-cta">
+                    <a href="#subscribe" class="cta-button">Experience Premium Analysis</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-3d-container" id="hero-3d-scene"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-icon"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Live Market Data -->
+    <section class="market-data">
+        <div class="ticker-container">
+            <div class="ticker-wrap">
+                <div class="ticker">
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">NASDAQ</span>
+                        <span class="ticker-value up">15,982.34</span>
+                        <span class="ticker-change">+1.28%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">S&P 500</span>
+                        <span class="ticker-value up">4,783.45</span>
+                        <span class="ticker-change">+0.87%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">DOW</span>
+                        <span class="ticker-value down">38,127.89</span>
+                        <span class="ticker-change">-0.32%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">BTC/USD</span>
+                        <span class="ticker-value up">68,234.56</span>
+                        <span class="ticker-change">+2.14%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">EUR/USD</span>
+                        <span class="ticker-value down">1.0842</span>
+                        <span class="ticker-change">-0.15%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">GOLD</span>
+                        <span class="ticker-value up">2,345.67</span>
+                        <span class="ticker-change">+0.54%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">CRUDE OIL</span>
+                        <span class="ticker-value up">82.45</span>
+                        <span class="ticker-change">+1.23%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">10Y TREASURY</span>
+                        <span class="ticker-value down">3.842</span>
+                        <span class="ticker-change">-0.05%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Analysis -->
+    <section id="analysis" class="featured-analysis">
+        <div class="section-header">
+            <h2 class="section-title">Featured Analysis</h2>
+            <p class="section-subtitle">Deep insights from our elite analysts</p>
+        </div>
+        <div class="analysis-container">
+            <div class="analysis-card">
+                <div class="card-image">
+                    <div class="premium-badge">Premium</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Macroeconomics</div>
+                    <h3 class="card-title">The Hidden Inflation Catalyst Nobody Is Talking About</h3>
+                    <p class="card-excerpt">Our analysis reveals a surprising correlation between supply chain disruptions and monetary policy effectiveness that could reshape market expectations.</p>
+                    <div class="card-meta">
+                        <span class="card-author">By Sarah Blackstone</span>
+                        <span class="card-date">April 2, 2025</span>
+                    </div>
+                </div>
+            </div>
+            <div class="analysis-card">
+                <div class="card-image">
+                    <div class="premium-badge">Premium</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Market Strategy</div>
+                    <h3 class="card-title">Algorithmic Trading: The New Paradigm for Institutional Investors</h3>
+                    <p class="card-excerpt">How quantitative strategies are reshaping market dynamics and creating unprecedented opportunities for sophisticated investors.</p>
+                    <div class="card-meta">
+                        <span class="card-author">By Michael Chen</span>
+                        <span class="card-date">April 1, 2025</span>
+                    </div>
+                </div>
+            </div>
+            <div class="analysis-card">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <div class="card-category">Global Markets</div>
+                    <h3 class="card-title">Emerging Markets: The Contrarian Case for Strategic Allocation</h3>
+                    <p class="card-excerpt">Despite conventional wisdom, our research indicates specific emerging markets are poised for exceptional growth due to overlooked structural reforms.</p>
+                    <div class="card-meta">
+                        <span class="card-author">By Raj Patel</span>
+                        <span class="card-date">March 30, 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Data Visualization -->
+    <section class="data-visualization">
+        <div class="section-header">
+            <h2 class="section-title">Market Intelligence</h2>
+            <p class="section-subtitle">Interactive data at your fingertips</p>
+        </div>
+        <div class="visualization-container">
+            <div class="visualization-tabs">
+                <button class="tab-button active" data-tab="market-trends">Market Trends</button>
+                <button class="tab-button" data-tab="sector-performance">Sector Performance</button>
+                <button class="tab-button" data-tab="economic-indicators">Economic Indicators</button>
+            </div>
+            <div class="visualization-content">
+                <div class="tab-content active" id="market-trends">
+                    <div class="chart-container" id="market-trends-chart"></div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #ef291d;"></span>
+                            <span class="legend-label">S&P 500</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #1d72ef;"></span>
+                            <span class="legend-label">NASDAQ</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #1def91;"></span>
+                            <span class="legend-label">DOW</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="sector-performance">
+                    <div class="chart-container" id="sector-performance-chart"></div>
+                </div>
+                <div class="tab-content" id="economic-indicators">
+                    <div class="chart-container" id="economic-indicators-chart"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy & Regulation -->
+    <section id="policy" class="policy-regulation">
+        <div class="section-header">
+            <h2 class="section-title">Policy & Regulation</h2>
+            <p class="section-subtitle">Stay ahead of regulatory changes</p>
+        </div>
+        <div class="policy-container">
+            <div class="policy-card">
+                <div class="policy-icon">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <div class="policy-content">
+                    <h3 class="policy-title">Federal Reserve Signals Shift in Monetary Strategy</h3>
+                    <p class="policy-excerpt">Our analysis of the latest Fed minutes reveals subtle language changes that suggest a significant pivot in policy direction.</p>
+                    <a href="#" class="policy-link">Read Analysis <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="policy-card">
+                <div class="policy-icon">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="policy-content">
+                    <h3 class="policy-title">New Regulatory Framework for Digital Assets</h3>
+                    <p class="policy-excerpt">Comprehensive breakdown of the proposed legislation and its implications for institutional investors in the cryptocurrency space.</p>
+                    <a href="#" class="policy-link">Read Analysis <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="policy-card">
+                <div class="policy-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <div class="policy-content">
+                    <h3 class="policy-title">International Trade Policy Shifts</h3>
+                    <p class="policy-excerpt">How emerging trade agreements are reshaping global supply chains and creating new investment opportunities in key sectors.</p>
+                    <a href="#" class="policy-link">Read Analysis <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opinion Section -->
+    <section id="opinion" class="opinion-section">
+        <div class="section-header">
+            <h2 class="section-title">Expert Opinion</h2>
+            <p class="section-subtitle">Perspectives from leading economists</p>
+        </div>
+        <div class="opinion-container">
+            <div class="opinion-quote">
+                <div class="quote-mark">"</div>
+                <blockquote class="quote-text">The conventional wisdom on inflation targeting needs radical rethinking in light of structural economic changes we've witnessed over the past decade.</blockquote>
+                <div class="quote-author">
+                    <div class="author-image"></div>
+                    <div class="author-details">
+                        <span class="author-name">Dr. Eleanor Winters</span>
+                        <span class="author-title">Former Federal Reserve Economist</span>
+                    </div>
+                </div>
+            </div>
+            <div class="opinion-quote">
+                <div class="quote-mark">"</div>
+                <blockquote class="quote-text">Markets are systematically underpricing climate transition risks. This represents both the greatest threat and opportunity for institutional investors in the coming decade.</blockquote>
+                <div class="quote-author">
+                    <div class="author-image"></div>
+                    <div class="author-details">
+                        <span class="author-name">Jonathan Blackwell</span>
+                        <span class="author-title">Chief Investment Strategist</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Subscription -->
+    <section id="subscribe" class="premium-subscription">
+        <div class="subscription-container">
+            <div class="subscription-content">
+                <h2 class="subscription-title">Join the Elite</h2>
+                <p class="subscription-subtitle">Get Exclusive Market Insights</p>
+                <ul class="subscription-features">
+                    <li class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Unlimited access to premium analysis</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Proprietary market intelligence reports</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Exclusive webinars with industry experts</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Early access to economic forecasts</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Personalized portfolio insights</span>
+                    </li>
+                </ul>
+                <div class="subscription-cta">
+                    <a href="#" class="cta-button pulse">Upgrade to Premium</a>
+                    <p class="cta-subtext">Unfiltered Capitalist Analysis</p>
+                </div>
+            </div>
+            <div class="subscription-visual">
+                <div class="subscription-3d-container" id="subscription-3d-scene"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#" class="logo">Fershman Financial</a>
+                <p class="footer-tagline">Elite Economic Intelligence</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Navigation</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#markets">Markets</a></li>
+                        <li><a href="#analysis">Analysis</a></li>
+                        <li><a href="#policy">Policy & Regulation</a></li>
+                        <li><a href="#opinion">Opinion</a></li>
+                        <li><a href="#subscribe">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Company</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Legal</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Connect</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h3 class="footer-heading">Newsletter</h3>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">© 2025 Fershman Financial. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
