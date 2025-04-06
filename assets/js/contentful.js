@@ -3,8 +3,8 @@ const contentful = require('contentful');
 
 // Initialize the Contentful client
 const client = contentful.createClient({
-  space: 'YOUR_SPACE_ID',
-  accessToken: 'YOUR_ACCESS_TOKEN',
+  space: 'jkx7dn6qj8zy',
+  accessToken: 'Bxoz6UQiiLQ0xdpzzvfpVSEScWh-u0t9OZKklXmisbM',
 });
 
 // Fetch articles
