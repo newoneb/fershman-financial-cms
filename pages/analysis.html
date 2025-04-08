@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis - Fershman Financial</title>
+    <meta name="description" content="In-depth economic analysis and financial insights from Fershman Financial.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Analysis - Fershman Financial">
+    <meta property="og:description" content="In-depth economic analysis and financial insights from the elite economic journal.">
+    <meta property="og:image" content="/assets/images/ELAZAR.png">
+    <meta property="og:url" content="https://fershman.com/pages/analysis.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dark">
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <img src="/assets/images/ELAZAR.png" alt="Fershman Financial" class="loader-logo">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+    
+    <!-- Mouse Follower -->
+    <div class="mouse-follower"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="/">
+                    <img src="/assets/images/ELAZAR.png" alt="Fershman Financial" class="logo">
+                </a>
+            </div>
+            
+            <div class="navbar-links">
+                <a href="/pages/markets.html" class="nav-link">Markets</a>
+                <a href="/pages/analysis.html" class="nav-link active">Analysis</a>
+                <a href="/pages/policy.html" class="nav-link">Policy & Regulation</a>
+                <a href="/pages/opinion.html" class="nav-link">Opinion</a>
+                <a href="/pages/about.html" class="nav-link">About</a>
+            </div>
+            
+            <div class="navbar-actions">
+                <button class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="navbar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Analysis</h1>
+            <p class="page-description">In-depth economic analysis and financial insights from our expert analysts.</p>
+        </div>
+    </header>
+    
+    <!-- Market Ticker -->
+    <div class="ticker-container">
+        <div class="ticker">
+            <div class="ticker-item">
+                <span class="ticker-symbol">S&P 500</span>
+                <span class="ticker-value up">5,218.65</span>
+                <span class="ticker-change up">+0.87%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">NASDAQ</span>
+                <span class="ticker-value up">16,384.47</span>
+                <span class="ticker-change up">+1.22%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">DOW</span>
+                <span class="ticker-value up">38,791.35</span>
+                <span class="ticker-change up">+0.68%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">FTSE 100</span>
+                <span class="ticker-value down">7,930.96</span>
+                <span class="ticker-change down">-0.32%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">DAX</span>
+                <span class="ticker-value up">18,384.35</span>
+                <span class="ticker-change up">+0.54%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">NIKKEI</span>
+                <span class="ticker-value down">38,596.47</span>
+                <span class="ticker-change down">-0.89%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">USD/EUR</span>
+                <span class="ticker-value up">0.9235</span>
+                <span class="ticker-change up">+0.12%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">USD/GBP</span>
+                <span class="ticker-value down">0.7892</span>
+                <span class="ticker-change down">-0.21%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">USD/JPY</span>
+                <span class="ticker-value up">151.67</span>
+                <span class="ticker-change up">+0.35%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">BITCOIN</span>
+                <span class="ticker-value up">68,245.78</span>
+                <span class="ticker-change up">+2.14%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">ETHEREUM</span>
+                <span class="ticker-value up">3,478.92</span>
+                <span class="ticker-change up">+1.87%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">GOLD</span>
+                <span class="ticker-value up">2,345.60</span>
+                <span class="ticker-change up">+0.45%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">CRUDE OIL</span>
+                <span class="ticker-value down">81.23</span>
+                <span class="ticker-change down">-1.12%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">10Y TREASURY</span>
+                <span class="ticker-value up">4.52%</span>
+                <span class="ticker-change up">+0.05</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Featured Analysis Section -->
+    <section class="featured-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Analysis</h2>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="featured-article main-article">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Analysis</div>
+                        <h3 class="article-title">Tech Sector Valuation Reset: Navigating the New Paradigm</h3>
+                        <p class="article-excerpt">As technology valuations undergo a fundamental reassessment, investors must adapt to a market that increasingly prioritizes profitability over growth potential. This analysis explores the shifting dynamics in tech valuations and provides a framework for identifying value in a changing landscape.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Sophia Chen</span>
+                            <span class="article-date">April 3, 2025</span>
+                        </div>
+                        <a href="/articles/tech-sector-valuation-reset.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Analysis Articles Section -->
+    <section class="articles-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Analysis</h2>
+            </div>
+            
+            <div class="articles-grid" id="analysis-articles">
+                <!-- Analysis articles will be loaded from Contentful -->
+                <!-- Fallback content for development -->
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Analysis</div>
+                        <h3 class="article-title">The Shifting Landscape of Global Supply Chains</h3>
+                        <p class="article-excerpt">How geopolitical tensions and pandemic lessons are fundamentally restructuring international trade networks and corporate strategies.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Elena Rodriguez</span>
+                            <span class="article-date">March 28, 2025</span>
+                        </div>
+                        <a href="/articles/shifting-landscape-supply-chains.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1618044733300-9472054094ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Analysis</div>
+                        <h3 class="article-title">Quantum Computing: Economic Implications of the Next Computing Revolution</h3>
+                        <p class="article-excerpt">As quantum computing approaches commercial viability, its potential to disrupt financial markets, cryptography, and economic modeling cannot be overstated.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Dr. James Chen</span>
+                            <span class="article-date">March 25, 2025</span>
+                        </div>
+                        <a href="/articles/quantum-computing-economic-implications.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Analysis</div>
+                        <h3 class="article-title">The New Monetary Policy Framework: Beyond Inflation Targeting</h3>
+                        <p class="article-excerpt">Central banks worldwide are rethinking their approach to monetary policy as traditional inflation targeting shows its limitations in a changing economic landscape.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Robert Kiyosaki</span>
+                            <span class="article-date">March 22, 2025</span>
+                        </div>
+                        <a href="/articles/new-monetary-policy-framework.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Analysis</div>
+                        <h3 class="article-title">Commercial Real Estate: Navigating the Post-Pandemic Structural Shift</h3>
+                        <p class="article-excerpt">The commercial real estate sector faces a profound transformation as remote work, e-commerce, and changing urban dynamics reshape demand patterns and valuations.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Michael Porter</span>
+                            <span class="article-date">March 19, 2025</span>
+                        </div>
+                        <a href="/articles/commercial-real-estate-shift.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Analysis</div>
+                        <h3 class="article-title">The Demographic Dividend: Economic Implications of Population Shifts</h3>
+                        <p class="article-excerpt">Examining how demographic transitions across developed and emerging economies are reshaping labor markets, consumption patterns, and investment opportunities.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Amartya Sen</span>
+                            <span class="article-date">March 16, 2025</span>
+                        </div>
+                        <a href="/articles/demographic-dividend.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Analysis</div>
+                        <h3 class="article-title">Digital Currencies: Central Banks at the Crossroads</h3>
+                        <p class="article-excerpt">As central bank digital currencies (CBDCs) move from concept to reality, their potential to transform monetary policy, financial stability, and global currency competition comes into focus.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Christine Lagarde</span>
+                            <span class="article-date">March 13, 2025</span>
+                        </div>
+                        <a href="/articles/digital-currencies-central-banks.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Analysis Categories Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Analysis Categories</h2>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="category-title">Macroeconomic Trends</h3>
+                    <p class="category-description">Analysis of global economic indicators, growth patterns, and structural shifts affecting markets and investments.</p>
+                    <a href="#" class="category-link">View Articles</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="category-title">Sector Analysis</h3>
+                    <p class="category-description">Deep dives into specific industries, examining competitive dynamics, disruption risks, and growth opportunities.</p>
+                    <a href="#" class="category-link">View Articles</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3 class="category-title">Geopolitical Impact</h3>
+                    <p class="category-description">Exploring how international relations, trade tensions, and political developments influence economic outcomes.</p>
+                    <a href="#" class="category-link">View Articles</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="category-title">Technology & Innovation</h3>
+                    <p class="category-description">Examining how technological advancements are reshaping industries, business models, and economic structures.</p>
+                    <a href="#" class="category-link">View Articles</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="category-title">Sustainable Finance</h3>
+                    <p class="category-description">Analysis of ESG trends, climate finance, and the economic implications of the transition to a sustainable economy.</p>
+                    <a href="#" class="category-link">View Articles</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="category-title">Monetary Policy</h3>
+                    <p class="category-description">Insights into central bank actions, interest rate dynamics, and their effects on financial markets and the real economy.</p>
+                    <a href="#" class="category-link">View Articles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Subscription Section -->
+    <section class="subscription-section section">
+        <div class="container">
+            <div class="subscription-container">
+                <h2 class="subscription-title">Get Premium Analysis</h2>
+                <p class="subscription-text">Subscribe to receive exclusive economic analysis and insights directly to your inbox.</p>
+                
+                <form class="subscription-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                
+                <p class="subscription-note">By subscribing, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/assets/images/ELAZAR.png" alt="Fershman Financial" class="logo">
+                <p>Fershman Financial provides elite economic analysis and market insights for discerning professionals.</p>
+                
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Sections</h3>
+                    <a href="/pages/markets.html">Markets</a>
+                    <a href="/pages/analysis.html">Analysis</a>
+                    <a href="/pages/policy.html">Policy & Regulation</a>
+                    <a href="/pages/opinion.html">Opinion</a>
+                    <a href="/pages/about.html">About</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <a href="#">Economic Calendar</a>
+                    <a href="#">Market Data</a>
+                    <a href="#">Research Reports</a>
+                    <a href="#">Webinars</a>
+                    <a href="#">Podcasts</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Advertise</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Disclaimer</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fershman Financial. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/contentful.js"></script>
+    <script>
+        // Initialize page-specific content
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load analysis articles from Contentful
+            if (typeof contentRenderer !== 'undefined' && contentRenderer.renderCategoryArticles) {
+                contentRenderer.renderCategoryArticles('Analysis', 'analysis-articles');
+            }
+        });
+    </script>
+</body>
+</html>

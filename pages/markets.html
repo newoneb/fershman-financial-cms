@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markets - Fershman Financial</title>
+    <meta name="description" content="In-depth market analysis and financial insights from Fershman Financial.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Markets - Fershman Financial">
+    <meta property="og:description" content="In-depth market analysis and financial insights from the elite economic journal.">
+    <meta property="og:image" content="/assets/images/ELAZAR.png">
+    <meta property="og:url" content="https://fershman.com/pages/markets.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dark">
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <img src="/assets/images/ELAZAR.png" alt="Fershman Financial" class="loader-logo">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+    
+    <!-- Mouse Follower -->
+    <div class="mouse-follower"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="/">
+                    <img src="/assets/images/ELAZAR.png" alt="Fershman Financial" class="logo">
+                </a>
+            </div>
+            
+            <div class="navbar-links">
+                <a href="/pages/markets.html" class="nav-link active">Markets</a>
+                <a href="/pages/analysis.html" class="nav-link">Analysis</a>
+                <a href="/pages/policy.html" class="nav-link">Policy & Regulation</a>
+                <a href="/pages/opinion.html" class="nav-link">Opinion</a>
+                <a href="/pages/about.html" class="nav-link">About</a>
+            </div>
+            
+            <div class="navbar-actions">
+                <button class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="navbar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Markets</h1>
+            <p class="page-description">Comprehensive analysis of global financial markets, trends, and economic indicators.</p>
+        </div>
+    </header>
+    
+    <!-- Market Ticker -->
+    <div class="ticker-container">
+        <div class="ticker">
+            <div class="ticker-item">
+                <span class="ticker-symbol">S&P 500</span>
+                <span class="ticker-value up">5,218.65</span>
+                <span class="ticker-change up">+0.87%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">NASDAQ</span>
+                <span class="ticker-value up">16,384.47</span>
+                <span class="ticker-change up">+1.22%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">DOW</span>
+                <span class="ticker-value up">38,791.35</span>
+                <span class="ticker-change up">+0.68%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">FTSE 100</span>
+                <span class="ticker-value down">7,930.96</span>
+                <span class="ticker-change down">-0.32%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">DAX</span>
+                <span class="ticker-value up">18,384.35</span>
+                <span class="ticker-change up">+0.54%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">NIKKEI</span>
+                <span class="ticker-value down">38,596.47</span>
+                <span class="ticker-change down">-0.89%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">USD/EUR</span>
+                <span class="ticker-value up">0.9235</span>
+                <span class="ticker-change up">+0.12%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">USD/GBP</span>
+                <span class="ticker-value down">0.7892</span>
+                <span class="ticker-change down">-0.21%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">USD/JPY</span>
+                <span class="ticker-value up">151.67</span>
+                <span class="ticker-change up">+0.35%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">BITCOIN</span>
+                <span class="ticker-value up">68,245.78</span>
+                <span class="ticker-change up">+2.14%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">ETHEREUM</span>
+                <span class="ticker-value up">3,478.92</span>
+                <span class="ticker-change up">+1.87%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">GOLD</span>
+                <span class="ticker-value up">2,345.60</span>
+                <span class="ticker-change up">+0.45%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">CRUDE OIL</span>
+                <span class="ticker-value down">81.23</span>
+                <span class="ticker-change down">-1.12%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">10Y TREASURY</span>
+                <span class="ticker-value up">4.52%</span>
+                <span class="ticker-change up">+0.05</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Market Overview Section -->
+    <section class="visualization-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Market Overview</h2>
+            </div>
+            
+            <div class="visualization-container">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="market-performance">Market Performance</button>
+                    <button class="tab-button" data-tab="sector-performance">Sector Performance</button>
+                    <button class="tab-button" data-tab="economic-indicators">Economic Indicators</button>
+                </div>
+                
+                <div class="tab-content active" id="market-performance">
+                    <canvas id="market-performance-chart"></canvas>
+                </div>
+                
+                <div class="tab-content" id="sector-performance">
+                    <canvas id="sector-performance-chart"></canvas>
+                </div>
+                
+                <div class="tab-content" id="economic-indicators">
+                    <canvas id="economic-indicators-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Market Articles Section -->
+    <section class="articles-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Market Analysis</h2>
+            </div>
+            
+            <div class="articles-grid" id="market-articles">
+                <!-- Market articles will be loaded from Contentful -->
+                <!-- Fallback content for development -->
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">Global Markets Rally as Central Banks Signal Coordinated Policy Shift</h3>
+                        <p class="article-excerpt">Major indices surge as Federal Reserve, ECB, and Bank of Japan announce synchronized approach to monetary policy, signaling a new era of international economic cooperation.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Jonathan Harrington</span>
+                            <span class="article-date">April 5, 2025</span>
+                        </div>
+                        <a href="/articles/global-markets-rally.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">Emerging Markets: The Next Frontier for Sustainable Investing</h3>
+                        <p class="article-excerpt">As ESG considerations become mainstream, emerging markets present both unique challenges and opportunities for investors seeking sustainable returns.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Maria Gonzalez</span>
+                            <span class="article-date">April 2, 2025</span>
+                        </div>
+                        <a href="/articles/emerging-markets-sustainable-investing.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">The Commodities Supercycle: Myth or Reality?</h3>
+                        <p class="article-excerpt">Examining the evidence for a new commodities supercycle amid global infrastructure spending, energy transition, and supply constraints.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Alexander Thompson</span>
+                            <span class="article-date">March 30, 2025</span>
+                        </div>
+                        <a href="/articles/commodities-supercycle.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">Private Markets: The Growing Influence on Public Equity Valuations</h3>
+                        <p class="article-excerpt">How the expansion of private capital markets is reshaping traditional public market dynamics and creating new valuation paradigms.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Sarah Johnson</span>
+                            <span class="article-date">March 27, 2025</span>
+                        </div>
+                        <a href="/articles/private-markets-influence.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Market Trends Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Market Trends</h2>
+            </div>
+            
+            <div class="visualization-container">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="global-trends">Global Trends</button>
+                    <button class="tab-button" data-tab="regional-trends">Regional Trends</button>
+                    <button class="tab-button" data-tab="sector-trends">Sector Trends</button>
+                </div>
+                
+                <div class="tab-content active" id="global-trends">
+                    <div class="trend-content">
+                        <h3>Key Global Market Trends</h3>
+                        <ul class="trend-list">
+                            <li>
+                                <h4>Artificial Intelligence Integration</h4>
+                                <p>The rapid adoption of AI across industries is creating new market leaders and disrupting established business models. Companies effectively implementing AI solutions are seeing significant productivity gains and market share expansion.</p>
+                            </li>
+                            <li>
+                                <h4>Energy Transition Acceleration</h4>
+                                <p>Global investment in renewable energy continues to outpace fossil fuels, with solar and wind capacity additions reaching record levels. This shift is creating both opportunities and challenges across the energy value chain.</p>
+                            </li>
+                            <li>
+                                <h4>Supply Chain Regionalization</h4>
+                                <p>Companies are increasingly prioritizing supply chain resilience over efficiency, leading to a significant reshoring and nearshoring trend that is reshaping global trade patterns and industrial policy.</p>
+                            </li>
+                            <li>
+                                <h4>Digital Asset Institutionalization</h4>
+                                <p>Cryptocurrencies and digital assets are gaining mainstream acceptance as regulatory frameworks mature and institutional adoption increases, particularly through ETFs and other traditional investment vehicles.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="regional-trends">
+                    <div class="trend-content">
+                        <h3>Regional Market Developments</h3>
+                        <ul class="trend-list">
+                            <li>
+                                <h4>North America</h4>
+                                <p>The U.S. economy continues to show resilience despite higher interest rates, with strong consumer spending and technological innovation driving growth. Canada's resource-heavy economy is benefiting from commodity price strength.</p>
+                            </li>
+                            <li>
+                                <h4>Europe</h4>
+                                <p>European markets face challenges from energy transition costs and demographic headwinds, but industrial policy initiatives and green technology investments are creating new growth opportunities.</p>
+                            </li>
+                            <li>
+                                <h4>Asia-Pacific</h4>
+                                <p>China's economic rebalancing is creating ripple effects throughout the region, while India emerges as a major growth engine with expanding manufacturing capacity and digital infrastructure.</p>
+                            </li>
+                            <li>
+                                <h4>Emerging Markets</h4>
+                                <p>Divergent performance across emerging economies reflects varying exposure to global trade, commodity prices, and domestic policy effectiveness, creating a more nuanced investment landscape.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="sector-trends">
+                    <div class="trend-content">
+                        <h3>Sector-Specific Trends</h3>
+                        <ul class="trend-list">
+                            <li>
+                                <h4>Technology</h4>
+                                <p>The AI revolution is driving unprecedented demand for computing infrastructure, specialized semiconductors, and data center capacity, while creating new competitive dynamics in software and services.</p>
+                            </li>
+                            <li>
+                                <h4>Healthcare</h4>
+                                <p>Breakthrough innovations in genomics, precision medicine, and digital health are transforming treatment paradigms and healthcare delivery models, creating opportunities for both established players and disruptors.</p>
+                            </li>
+                            <li>
+                                <h4>Financials</h4>
+                                <p>Traditional financial institutions face increasing competition from fintech innovators, while adapting to a changing regulatory landscape and the emergence of decentralized finance alternatives.</p>
+                            </li>
+                            <li>
+                                <h4>Energy</h4>
+                                <p>The energy sector is navigating a complex transition as renewable capacity expands rapidly while traditional energy sources remain critical to meeting global demand, creating a dual investment narrative.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Subscription Section -->
+    <section class="subscription-section section">
+        <div class="container">
+            <div class="subscription-container">
+                <h2 class="subscription-title">Stay Ahead of the Markets</h2>
+                <p class="subscription-text">Subscribe to receive exclusive market insights and analysis directly to your inbox.</p>
+                
+                <form class="subscription-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                
+                <p class="subscription-note">By subscribing, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/assets/images/ELAZAR.png" alt="Fershman Financial" class="logo">
+                <p>Fershman Financial provides elite economic analysis and market insights for discerning professionals.</p>
+                
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Sections</h3>
+                    <a href="/pages/markets.html">Markets</a>
+                    <a href="/pages/analysis.html">Analysis</a>
+                    <a href="/pages/policy.html">Policy & Regulation</a>
+                    <a href="/pages/opinion.html">Opinion</a>
+                    <a href="/pages/about.html">About</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <a href="#">Economic Calendar</a>
+                    <a href="#">Market Data</a>
+                    <a href="#">Research Reports</a>
+                    <a href="#">Webinars</a>
+                    <a href="#">Podcasts</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Advertise</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Disclaimer</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fershman Financial. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/contentful.js"></script>
+    <script>
+        // Initialize page-specific content
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load market articles from Contentful
+            if (typeof contentRenderer !== 'undefined' && contentRenderer.renderCategoryArticles) {
+                contentRenderer.renderCategoryArticles('Markets', 'market-articles');
+            }
+        });
+    </script>
+</body>
+</html>
