@@ -1,0 +1,34 @@
+# Netlify configuration file
+
+# Build settings
+[build]
+  # Directory to publish (the output of your build process)
+  publish = "dist"
+  
+  # Default build command
+  command = "npm run build"
+
+# Redirects and rewrites
+[[redirects]]
+  # Redirect all paths to index.html for client-side routing
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers for all pages
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover
+  for = "/*"
+    [headers.values]
+    # Enable CORS for all assets
+    Access-Control-Allow-Origin = "*"
+    # Cache control for better performance
+    Cache-Control = "public, max-age=3600"
+
+# Environment variables (these will be overridden by Netlify UI settings)
+[build.environment]
+  NODE_VERSION = "18.12.0"
+
+# Asset optimization
+[build.processing]
+  skip_processing = false
