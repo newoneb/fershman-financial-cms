@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy & Regulation - Fershman Financial</title>
+    <meta name="description" content="Analysis of financial policy and regulatory developments from Fershman Financial.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Policy & Regulation - Fershman Financial">
+    <meta property="og:description" content="Analysis of financial policy and regulatory developments from the elite economic journal.">
+    <meta property="og:image" content="/assets/images/ELAZAR.png">
+    <meta property="og:url" content="https://fershman.com/pages/policy.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dark">
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <img src="/assets/images/ELAZAR.png" alt="Fershman Financial" class="loader-logo">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+    
+    <!-- Mouse Follower -->
+    <div class="mouse-follower"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="/">
+                    <img src="/assets/images/ELAZAR.png" alt="Fershman Financial" class="logo">
+                </a>
+            </div>
+            
+            <div class="navbar-links">
+                <a href="/pages/markets.html" class="nav-link">Markets</a>
+                <a href="/pages/analysis.html" class="nav-link">Analysis</a>
+                <a href="/pages/policy.html" class="nav-link active">Policy & Regulation</a>
+                <a href="/pages/opinion.html" class="nav-link">Opinion</a>
+                <a href="/pages/about.html" class="nav-link">About</a>
+            </div>
+            
+            <div class="navbar-actions">
+                <button class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="navbar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Policy & Regulation</h1>
+            <p class="page-description">Analysis of financial policy, regulatory developments, and their impact on markets and the economy.</p>
+        </div>
+    </header>
+    
+    <!-- Market Ticker -->
+    <div class="ticker-container">
+        <div class="ticker">
+            <div class="ticker-item">
+                <span class="ticker-symbol">S&P 500</span>
+                <span class="ticker-value up">5,218.65</span>
+                <span class="ticker-change up">+0.87%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">NASDAQ</span>
+                <span class="ticker-value up">16,384.47</span>
+                <span class="ticker-change up">+1.22%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">DOW</span>
+                <span class="ticker-value up">38,791.35</span>
+                <span class="ticker-change up">+0.68%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">FTSE 100</span>
+                <span class="ticker-value down">7,930.96</span>
+                <span class="ticker-change down">-0.32%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">DAX</span>
+                <span class="ticker-value up">18,384.35</span>
+                <span class="ticker-change up">+0.54%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">NIKKEI</span>
+                <span class="ticker-value down">38,596.47</span>
+                <span class="ticker-change down">-0.89%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">USD/EUR</span>
+                <span class="ticker-value up">0.9235</span>
+                <span class="ticker-change up">+0.12%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">USD/GBP</span>
+                <span class="ticker-value down">0.7892</span>
+                <span class="ticker-change down">-0.21%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">USD/JPY</span>
+                <span class="ticker-value up">151.67</span>
+                <span class="ticker-change up">+0.35%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">BITCOIN</span>
+                <span class="ticker-value up">68,245.78</span>
+                <span class="ticker-change up">+2.14%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">ETHEREUM</span>
+                <span class="ticker-value up">3,478.92</span>
+                <span class="ticker-change up">+1.87%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">GOLD</span>
+                <span class="ticker-value up">2,345.60</span>
+                <span class="ticker-change up">+0.45%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">CRUDE OIL</span>
+                <span class="ticker-value down">81.23</span>
+                <span class="ticker-change down">-1.12%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">10Y TREASURY</span>
+                <span class="ticker-value up">4.52%</span>
+                <span class="ticker-change up">+0.05</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Featured Policy Section -->
+    <section class="featured-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Policy Analysis</h2>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="featured-article main-article">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Policy & Regulation</div>
+                        <h3 class="article-title">Regulatory Overhaul: The Implications of the Financial Services Reform Act</h3>
+                        <p class="article-excerpt">The most significant financial regulation since Dodd-Frank promises to reshape banking, fintech, and market structure for decades to come. This comprehensive analysis examines the key provisions and their potential impact on financial institutions, markets, and investors.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Marcus Williams</span>
+                            <span class="article-date">April 1, 2025</span>
+                        </div>
+                        <a href="/articles/regulatory-overhaul.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Policy Articles Section -->
+    <section class="articles-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Policy & Regulation</h2>
+            </div>
+            
+            <div class="articles-grid" id="policy-articles">
+                <!-- Policy articles will be loaded from Contentful -->
+                <!-- Fallback content for development -->
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Policy & Regulation</div>
+                        <h3 class="article-title">The New Era of Antitrust: Tech Regulation in the Digital Age</h3>
+                        <p class="article-excerpt">How evolving antitrust frameworks are reshaping competition policy for digital platforms and creating new compliance challenges for technology companies.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Lina Khan</span>
+                            <span class="article-date">March 29, 2025</span>
+                        </div>
+                        <a href="/articles/new-era-antitrust.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Policy & Regulation</div>
+                        <h3 class="article-title">Climate Finance Regulation: The Path to Standardized Disclosure</h3>
+                        <p class="article-excerpt">Analyzing the global convergence toward mandatory climate risk disclosure and its implications for corporate strategy, investor behavior, and market efficiency.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Emma Raducanu</span>
+                            <span class="article-date">March 26, 2025</span>
+                        </div>
+                        <a href="/articles/climate-finance-regulation.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1621264448270-9ef00e88a935?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Policy & Regulation</div>
+                        <h3 class="article-title">Cryptocurrency Regulation: Finding the Balance Between Innovation and Stability</h3>
+                        <p class="article-excerpt">As governments worldwide develop regulatory frameworks for digital assets, the challenge of fostering innovation while protecting financial stability comes into focus.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Gary Gensler</span>
+                            <span class="article-date">March 23, 2025</span>
+                        </div>
+                        <a href="/articles/cryptocurrency-regulation-balance.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Policy & Regulation</div>
+                        <h3 class="article-title">Banking Regulation After SVB: The New Capital Requirements Paradigm</h3>
+                        <p class="article-excerpt">Examining how the regulatory response to recent banking failures is reshaping capital requirements, liquidity standards, and supervision frameworks.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Jerome Powell</span>
+                            <span class="article-date">March 20, 2025</span>
+                        </div>
+                        <a href="/articles/banking-regulation-after-svb.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Policy & Regulation</div>
+                        <h3 class="article-title">Data Privacy Regulation: Economic Implications of a Fragmented Global Landscape</h3>
+                        <p class="article-excerpt">How divergent data privacy regimes across major economies are creating compliance challenges, reshaping business models, and influencing cross-border data flows.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Margrethe Vestager</span>
+                            <span class="article-date">March 17, 2025</span>
+                        </div>
+                        <a href="/articles/data-privacy-regulation.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Policy & Regulation</div>
+                        <h3 class="article-title">The Future of Financial Inclusion: Regulatory Frameworks for Digital Banking</h3>
+                        <p class="article-excerpt">Analyzing how regulators are adapting frameworks to accommodate digital banking innovations while ensuring consumer protection and financial stability.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Agustín Carstens</span>
+                            <span class="article-date">March 14, 2025</span>
+                        </div>
+                        <a href="/articles/future-financial-inclusion.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Regulatory Calendar Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Regulatory Calendar</h2>
+            </div>
+            
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <h3>Upcoming Regulatory Events</h3>
+                    <p>Key regulatory deadlines, hearings, and implementation dates</p>
+                </div>
+                
+                <div class="calendar-events">
+                    <div class="calendar-event">
+                        <div class="event-date">
+                            <span class="event-month">APR</span>
+                            <span class="event-day">15</span>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">SEC Open Meeting: Climate Disclosure Rules</h4>
+                            <p class="event-description">The Securities and Exchange Commission will hold an open meeting to consider adopting final rules on climate-related disclosures for public companies.</p>
+                            <span class="event-location">Washington, DC</span>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-event">
+                        <div class="event-date">
+                            <span class="event-month">APR</span>
+                            <span class="event-day">22</span>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">Federal Reserve FOMC Meeting</h4>
+                            <p class="event-description">The Federal Open Market Committee will meet to discuss monetary policy and interest rates, with implications for financial regulation.</p>
+                            <span class="event-location">Washington, DC</span>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-event">
+                        <div class="event-date">
+                            <span class="event-month">MAY</span>
+                            <span class="event-day">01</span>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">Implementation: Basel III Endgame</h4>
+                            <p class="event-description">Final phase of Basel III capital requirements takes effect for globally systemically important banks (G-SIBs).</p>
+                            <span class="event-location">Global</span>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-event">
+                        <div class="event-date">
+                            <span class="event-month">MAY</span>
+                            <span class="event-day">10</span>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">Congressional Hearing: Digital Asset Regulation</h4>
+                            <p class="event-description">Senate Banking Committee hearing on proposed legislation for comprehensive digital asset regulation.</p>
+                            <span class="event-location">Washington, DC</span>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-event">
+                        <div class="event-date">
+                            <span class="event-month">MAY</span>
+                            <span class="event-day">15</span>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">EU Digital Markets Act: Full Implementation</h4>
+                            <p class="event-description">Complete implementation of the EU's Digital Markets Act, with significant implications for tech platforms operating in Europe.</p>
+                            <span class="event-location">European Union</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Subscription Section -->
+    <section class="subscription-section section">
+        <div class="container">
+            <div class="subscription-container">
+                <h2 class="subscription-title">Stay Informed on Regulatory Developments</h2>
+                <p class="subscription-text">Subscribe to receive policy updates and regulatory analysis directly to your inbox.</p>
+                
+                <form class="subscription-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                
+                <p class="subscription-note">By subscribing, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/assets/images/ELAZAR.png" alt="Fershman Financial" class="logo">
+                <p>Fershman Financial provides elite economic analysis and market insights for discerning professionals.</p>
+                
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Sections</h3>
+                    <a href="/pages/markets.html">Markets</a>
+                    <a href="/pages/analysis.html">Analysis</a>
+                    <a href="/pages/policy.html">Policy & Regulation</a>
+                    <a href="/pages/opinion.html">Opinion</a>
+                    <a href="/pages/about.html">About</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <a href="#">Economic Calendar</a>
+                    <a href="#">Market Data</a>
+                    <a href="#">Research Reports</a>
+                    <a href="#">Webinars</a>
+                    <a href="#">Podcasts</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Advertise</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Disclaimer</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fershman Financial. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/contentful.js"></script>
+    <script>
+        // Initialize page-specific content
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load policy articles from Contentful
+            if (typeof contentRenderer !== 'undefined' && contentRenderer.renderCategoryArticles) {
+                contentRenderer.renderCategoryArticles('Policy & Regulation', 'policy-articles');
+            }
+        });
+    </script>
+</body>
+</html>
