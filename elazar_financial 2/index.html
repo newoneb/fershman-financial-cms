@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fershman Financial - Elite Economic Intelligence</title>
+    <meta name="description" content="Fershman Financial provides elite economic intelligence and in-depth market analysis for the modern investor. Beyond the Headlines. Beyond the Markets.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <img src="assets/images/ELAZAR.png" alt="Fershman Financial" class="loader-logo">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Mouse Follower -->
+    <div class="mouse-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="assets/images/ELAZAR.png" alt="Fershman Financial" class="logo">
+            </a>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="navbar-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="pages/markets.html" class="nav-link">Markets</a>
+                <a href="pages/analysis.html" class="nav-link">Analysis</a>
+                <a href="pages/policy.html" class="nav-link">Policy & Regulation</a>
+                <a href="pages/opinion.html" class="nav-link">Opinion</a>
+                <a href="pages/about.html" class="nav-link">About</a>
+            </div>
+            <div class="navbar-actions">
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Beyond the Headlines.<br>Beyond the Markets.</h1>
+            <p class="hero-subtitle">Elite economic intelligence for the modern investor.</p>
+            <a href="#featured" class="cta-button">Explore Latest Insights</a>
+        </div>
+    </section>
+
+    <!-- Market Ticker -->
+    <div class="ticker-container">
+        <div class="ticker">
+            <!-- Ticker items will be populated dynamically -->
+            <div class="ticker-item">
+                <span class="ticker-symbol">S&P 500</span>
+                <span class="ticker-value up">4,766.18</span>
+                <span class="ticker-change up">+0.41%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">NASDAQ</span>
+                <span class="ticker-value up">15,645.23</span>
+                <span class="ticker-change up">+0.63%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">DOW</span>
+                <span class="ticker-value down">36,338.30</span>
+                <span class="ticker-change down">-0.16%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">BTC/USD</span>
+                <span class="ticker-value up">46,219.50</span>
+                <span class="ticker-change up">+1.27%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">EUR/USD</span>
+                <span class="ticker-value down">1.1372</span>
+                <span class="ticker-change down">-0.05%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">GOLD</span>
+                <span class="ticker-value up">1,829.20</span>
+                <span class="ticker-change up">+0.32%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">OIL</span>
+                <span class="ticker-value up">75.21</span>
+                <span class="ticker-change up">+0.87%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">10Y-T</span>
+                <span class="ticker-value down">1.512</span>
+                <span class="ticker-change down">-0.02%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Articles -->
+    <section id="featured" class="section featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Insights</h2>
+                <a href="pages/markets.html" class="section-link">View All</a>
+            </div>
+            <div class="featured-grid" id="featured-articles">
+                <!-- Featured articles will be populated dynamically -->
+                <div class="featured-article main-article">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">Global Markets Rally as Central Banks Signal Coordinated Policy Shift</h3>
+                        <p class="article-excerpt">Major indices surge as Federal Reserve, ECB, and Bank of Japan announce synchronized approach to combat inflation while supporting economic growth.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Jonathan Pierce</span>
+                            <span class="article-date">April 5, 2025</span>
+                        </div>
+                        <a href="articles/global-markets-rally.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                <div class="featured-article">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">Tech Sector Faces Valuation Reset Amid Rising Interest Rates</h3>
+                        <p class="article-excerpt">Investors reassess growth projections as borrowing costs increase, particularly impacting companies with distant profitability horizons.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Rachel Kim</span>
+                            <span class="article-date">April 4, 2025</span>
+                        </div>
+                        <a href="articles/tech-sector-valuation-reset.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                <div class="featured-article">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">Emerging Markets Outperform as Dollar Weakens</h3>
+                        <p class="article-excerpt">Developing economies see capital inflows accelerate as currency pressures ease and commodity prices stabilize.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Miguel Santos</span>
+                            <span class="article-date">April 2, 2025</span>
+                        </div>
+                        <a href="articles/emerging-markets-outperform.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                <div class="featured-article">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Analysis</div>
+                        <h3 class="article-title">AI Revolution in Financial Analysis: Beyond the Hype</h3>
+                        <p class="article-excerpt">How artificial intelligence is transforming investment research and creating new opportunities for quantitative strategies.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By David Chen</span>
+                            <span class="article-date">April 3, 2025</span>
+                        </div>
+                        <a href="articles/ai-revolution-financial-analysis.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Visualization -->
+    <section class="section visualization-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Market Visualization</h2>
+            </div>
+            <div class="visualization-container">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="market-performance">Market Performance</button>
+                    <button class="tab-button" data-tab="sector-performance">Sector Performance</button>
+                    <button class="tab-button" data-tab="economic-indicators">Economic Indicators</button>
+                </div>
+                <div class="tab-content active" id="market-performance">
+                    <canvas id="market-performance-chart"></canvas>
+                </div>
+                <div class="tab-content" id="sector-performance">
+                    <canvas id="sector-performance-chart"></canvas>
+                </div>
+                <div class="tab-content" id="economic-indicators">
+                    <canvas id="economic-indicators-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analysis Section -->
+    <section class="section analysis-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Analysis</h2>
+                <a href="pages/analysis.html" class="section-link">View All</a>
+            </div>
+            <div class="analysis-container">
+                <div class="analysis-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="card-content">
+                        <div class="card-category">Analysis</div>
+                        <h3 class="card-title">AI Revolution in Financial Analysis: Beyond the Hype</h3>
+                        <p class="card-excerpt">How artificial intelligence is transforming investment research and creating new opportunities for quantitative strategies.</p>
+                        <div class="card-meta">
+                            <span class="card-author">By David Chen</span>
+                            <span class="card-date">April 3, 2025</span>
+                        </div>
+                        <a href="articles/ai-revolution-financial-analysis.html" class="card-link">Read More</a>
+                    </div>
+                </div>
+                <div class="analysis-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="card-content">
+                        <div class="card-category">Analysis</div>
+                        <h3 class="card-title">The Shifting Landscape of Global Supply Chains</h3>
+                        <p class="card-excerpt">How geopolitical tensions and pandemic lessons are reshaping manufacturing networks and creating new investment opportunities.</p>
+                        <div class="card-meta">
+                            <span class="card-author">By Sarah Johnson</span>
+                            <span class="card-date">March 29, 2025</span>
+                        </div>
+                        <a href="articles/global-supply-chains.html" class="card-link">Read More</a>
+                    </div>
+                </div>
+                <div class="analysis-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="card-content">
+                        <div class="card-category">Analysis</div>
+                        <h3 class="card-title">ESG Investing: Beyond the Compliance Checkbox</h3>
+                        <p class="card-excerpt">Why environmental, social, and governance factors are becoming critical components of fundamental investment analysis.</p>
+                        <div class="card-meta">
+                            <span class="card-author">By Emma Blackwell</span>
+                            <span class="card-date">March 25, 2025</span>
+                        </div>
+                        <a href="articles/esg-investing.html" class="card-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Section -->
+    <section class="section policy-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Policy & Regulation</h2>
+                <a href="pages/policy.html" class="section-link">View All</a>
+            </div>
+            <div class="policy-container">
+                <div class="policy-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1621416894569-0f39ed31d247?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="card-content">
+                        <div class="card-category">Policy & Regulation</div>
+                        <h3 class="card-title">Central Bank Digital Currencies: A Monetary Policy Revolution</h3>
+                        <p class="card-excerpt">How CBDCs will fundamentally transform monetary policy implementation, providing central banks with unprecedented precision in targeting economic outcomes.</p>
+                        <div class="card-meta">
+                            <span class="card-author">By Robert Kiyosaki</span>
+                            <span class="card-date">March 18, 2025</span>
+                        </div>
+                        <a href="articles/cbdc-monetary-policy.html" class="card-link">Read More</a>
+                    </div>
+                </div>
+                <div class="policy-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="card-content">
+                        <div class="card-category">Policy & Regulation</div>
+                        <h3 class="card-title">The New Era of Financial Regulation: Beyond Traditional Banking</h3>
+                        <p class="card-excerpt">How regulators are adapting frameworks to address emerging risks in decentralized finance, digital assets, and non-bank financial intermediation.</p>
+                        <div class="card-meta">
+                            <span class="card-author">By Jennifer Martinez</span>
+                            <span class="card-date">March 15, 2025</span>
+                        </div>
+                        <a href="articles/financial-regulation-new-era.html" class="card-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opinion Section -->
+    <section class="section opinion-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Expert Opinions</h2>
+                <a href="pages/opinion.html" class="section-link">View All</a>
+            </div>
+            <div class="opinion-container" id="expert-opinions">
+                <!-- Expert opinions will be populated dynamically -->
+                <div class="opinion-quote">
+                    <div class="quote-mark">"</div>
+                    <p class="quote-text">The next decade will see a fundamental restructuring of global supply chains, with resilience prioritized over efficiency. Companies that fail to adapt will find themselves at a severe competitive disadvantage in an increasingly volatile world.</p>
+                    <div class="quote-author">
+                        <div class="author-image" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                        <div class="author-details">
+                            <h4 class="author-name">Dr. Michael Chen</h4>
+                            <p class="author-title">Former Chief Economist, World Bank</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="opinion-quote">
+                    <div class="quote-mark">"</div>
+                    <p class="quote-text">ESG investing is not merely a trend but a fundamental shift in how we evaluate corporate performance. The companies that thrive will be those that recognize sustainability as a core driver of long-term value creation rather than a compliance exercise.</p>
+                    <div class="quote-author">
+                        <div class="author-image" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                        <div class="author-details">
+                            <h4 class="author-name">Sarah Blackwell</h4>
+                            <p class="author-title">Managing Director, Global Sustainable Finance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription CTA -->
+    <section class="section subscription-section">
+        <div class="container">
+            <div class="subscription-container">
+                <div class="subscription-content">
+                    <h2 class="subscription-title">Join the Elite</h2>
+                    <p class="subscription-text">Get exclusive market insights and unfiltered capitalist analysis delivered directly to your inbox.</p>
+                    <div class="subscription-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <p class="subscription-note">By subscribing, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/images/ELAZAR.png" alt="Fershman Financial" class="logo">
+                <p>Elite Economic Intelligence</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <a href="index.html">Home</a>
+                    <a href="pages/markets.html">Markets</a>
+                    <a href="pages/analysis.html">Analysis</a>
+                    <a href="pages/policy.html">Policy & Regulation</a>
+                    <a href="pages/opinion.html">Opinion</a>
+                    <a href="pages/about.html">About</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <a href="pages/about.html">About</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email">
+                            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fershman Financial. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/contentful.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

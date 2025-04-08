@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fershman Financial - README</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #ef291d;
+            border-bottom: 2px solid #ef291d;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #333;
+            margin-top: 30px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .highlight {
+            background-color: #ffffcc;
+            padding: 10px;
+            border-left: 3px solid #ef291d;
+            margin: 20px 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fershman Financial Website</h1>
+    <p>A premium, high-end financial journal website with Contentful CMS integration.</p>
+
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#file-structure">File Structure</a></li>
+        <li><a href="#contentful-setup">Contentful CMS Setup</a></li>
+        <li><a href="#netlify-deployment">Netlify Deployment</a></li>
+        <li><a href="#environment-variables">Environment Variables</a></li>
+        <li><a href="#content-management">Content Management Guide</a></li>
+        <li><a href="#development">Development Guide</a></li>
+    </ul>
+
+    <h2 id="features">Features</h2>
+    <ul>
+        <li><strong>Modern Design</strong> - Premium, high-end design with 3D effects and animations</li>
+        <li><strong>Contentful CMS Integration</strong> - Easy content management without coding</li>
+        <li><strong>Responsive Design</strong> - Optimized for all devices (desktop, tablet, mobile)</li>
+        <li><strong>Dark/Light Mode</strong> - Toggle between dark and light themes</li>
+        <li><strong>Interactive Elements</strong> - Market data ticker, charts, and visualizations</li>
+        <li><strong>Category Pages</strong> - Separate pages for Markets, Analysis, Policy, and Opinion</li>
+        <li><strong>Article Templates</strong> - SEO-friendly article pages with related content</li>
+    </ul>
+
+    <h2 id="file-structure">File Structure</h2>
+    <pre>
+fershman-financial/
+├── index.html                  # Homepage
+├── pages/                      # Category pages
+│   ├── markets.html
+│   ├── analysis.html
+│   ├── policy.html
+│   ├── opinion.html
+│   └── about.html
+├── articles/                   # Article pages
+│   ├── article-template.html
+│   ├── global-markets-rally.html
+│   └── tech-sector-valuation-reset.html
+├── assets/
+│   ├── css/
+│   │   ├── styles.css          # Main styles
+│   │   └── mobile.css          # Mobile responsive styles
+│   ├── js/
+│   │   ├── main.js             # Main JavaScript functionality
+│   │   └── contentful.js       # Contentful integration
+│   └── images/
+│       └── ELAZAR.png          # Logo
+├── package.json                # Project dependencies
+├── webpack.config.js           # Webpack configuration
+└── README.md                   # This documentation
+    </pre>
+
+    <h2 id="contentful-setup">Contentful CMS Setup</h2>
+    <p>Follow these steps to set up your Contentful content models:</p>
+
+    <h3>1. Create a Contentful Account</h3>
+    <p>If you don't have one already, sign up at <a href="https://www.contentful.com/" target="_blank">contentful.com</a>.</p>
+
+    <h3>2. Create a New Space</h3>
+    <p>Once logged in, create a new space for your Fershman Financial content.</p>
+
+    <h3>3. Set Up Content Models</h3>
+    <p>Create the following content models:</p>
+
+    <h4>Article Model</h4>
+    <ul>
+        <li><strong>Title</strong> (Short text)</li>
+        <li><strong>Slug</strong> (Short text) - URL-friendly version of the title</li>
+        <li><strong>Category</strong> (Short text with predefined values: Markets, Analysis, Policy & Regulation, Opinion)</li>
+        <li><strong>Author</strong> (Reference to Author content type)</li>
+        <li><strong>Publication Date</strong> (Date & time)</li>
+        <li><strong>Excerpt</strong> (Long text) - Short summary for previews</li>
+        <li><strong>Content</strong> (Rich text) - Main article content</li>
+        <li><strong>Featured Image</strong> (Media) - Main image for the article</li>
+        <li><strong>Featured</strong> (Boolean) - Whether to show on homepage</li>
+        <li><strong>Premium</strong> (Boolean) - Whether it's premium content</li>
+        <li><strong>Tags</strong> (Short text, list) - Related keywords</li>
+        <li><strong>Meta Description</strong> (Long text) - For SEO</li>
+    </ul>
+
+    <h4>Author Model</h4>
+    <ul>
+        <li><strong>Name</strong> (Short text)</li>
+        <li><strong>Title</strong> (Short text) - Job title or position</li>
+        <li><strong>Bio</strong> (Long text)</li>
+        <li><strong>Image</strong> (Media) - Author photo</li>
+    </ul>
+
+    <h4>Market Data Model</h4>
+    <ul>
+        <li><strong>Symbol</strong> (Short text) - e.g., "S&P 500"</li>
+        <li><strong>Value</strong> (Short text) - Current value</li>
+        <li><strong>Change</strong> (Short text) - Change percentage</li>
+        <li><strong>Direction</strong> (Short text with predefined values: up, down, neutral)</li>
+        <li><strong>Order</strong> (Number) - Display order in ticker</li>
+    </ul>
+
+    <h4>Expert Opinion Model</h4>
+    <ul>
+        <li><strong>Quote</strong> (Long text)</li>
+        <li><strong>Author Name</strong> (Short text)</li>
+        <li><strong>Author Title</strong> (Short text)</li>
+        <li><strong>Author Image</strong> (Media)</li>
+        <li><strong>Publication Date</strong> (Date & time)</li>
+    </ul>
+
+    <h4>Featured Analysis Model</h4>
+    <ul>
+        <li><strong>Title</strong> (Short text)</li>
+        <li><strong>Category</strong> (Short text)</li>
+        <li><strong>Summary</strong> (Long text)</li>
+        <li><strong>Article Link</strong> (Reference to Article)</li>
+        <li><strong>Premium</strong> (Boolean)</li>
+        <li><strong>Publication Date</strong> (Date & time)</li>
+    </ul>
+
+    <h3>4. Generate API Keys</h3>
+    <p>Go to Settings > API Keys and create a new API key. You'll need:</p>
+    <ul>
+        <li><strong>Space ID</strong></li>
+        <li><strong>Content Delivery API - access token</strong></li>
+    </ul>
+
+    <div class="highlight">
+        <p><strong>Important:</strong> Keep your API keys secure. Never commit them directly in your code.</p>
+    </div>
+
+    <h2 id="netlify-deployment">Netlify Deployment</h2>
+    <p>Follow these steps to deploy your website to Netlify:</p>
+
+    <h3>1. Push Your Code to GitHub</h3>
+    <p>Create a new repository on GitHub and push your code.</p>
+
+    <h3>2. Connect to Netlify</h3>
+    <ol>
+        <li>Sign up/log in to <a href="https://www.netlify.com/" target="_blank">Netlify</a></li>
+        <li>Click "New site from Git"</li>
+        <li>Select GitHub and authorize Netlify</li>
+        <li>Choose your repository</li>
+    </ol>
+
+    <h3>3. Configure Build Settings</h3>
+    <ul>
+        <li><strong>Build command:</strong> <code>npm run build</code></li>
+        <li><strong>Publish directory:</strong> <code>dist</code></li>
+    </ul>
+
+    <h3>4. Set Environment Variables</h3>
+    <p>Add your Contentful API keys as environment variables (see next section).</p>
+
+    <h3>5. Deploy Your Site</h3>
+    <p>Click "Deploy site" and wait for the build to complete.</p>
+
+    <h3>6. Connect Your Domain</h3>
+    <ol>
+        <li>Go to Site settings > Domain management</li>
+        <li>Click "Add custom domain"</li>
+        <li>Enter your domain (e.g., fershman.com)</li>
+        <li>Follow Netlify's instructions to update your DNS settings</li>
+        <li>Enable HTTPS once DNS is verified</li>
+    </ol>
+
+    <h2 id="environment-variables">Environment Variables</h2>
+    <p>The website uses environment variables to securely connect to Contentful. In Netlify, add these variables:</p>
+
+    <pre>
+CONTENTFUL_SPACE_ID=your_space_id_here
+CONTENTFUL_ACCESS_TOKEN=your_access_token_here
+    </pre>
+
+    <p>For local development, you can create a <code>.env</code> file with these variables.</p>
+
+    <h2 id="content-management">Content Management Guide</h2>
+    <p>Once your Contentful space is set up, you can manage your content without touching code:</p>
+
+    <h3>Adding New Articles</h3>
+    <ol>
+        <li>Log in to Contentful</li>
+        <li>Go to Content > Add entry > Article</li>
+        <li>Fill in all required fields</li>
+        <li>Set the category to determine where it appears on the site</li>
+        <li>Toggle "Featured" to show it on the homepage</li>
+        <li>Click Publish</li>
+    </ol>
+
+    <h3>Updating Market Data</h3>
+    <ol>
+        <li>Go to Content > Market Data</li>
+        <li>Select the entry you want to update</li>
+        <li>Change the values, direction, etc.</li>
+        <li>Click Publish</li>
+    </ol>
+
+    <h3>Adding Expert Opinions</h3>
+    <ol>
+        <li>Go to Content > Add entry > Expert Opinion</li>
+        <li>Add the quote, author details, and image</li>
+        <li>Click Publish</li>
+    </ol>
+
+    <h3>Triggering Builds</h3>
+    <p>When you publish content in Contentful, your website should automatically rebuild if you've set up webhooks:</p>
+    <ol>
+        <li>In Netlify: Site settings > Build & deploy > Build hooks</li>
+        <li>Create a new build hook named "Contentful Publish"</li>
+        <li>Copy the URL</li>
+        <li>In Contentful: Settings > Webhooks</li>
+        <li>Create a webhook with the Netlify build hook URL</li>
+        <li>Set it to trigger on Publish/Unpublish events</li>
+    </ol>
+
+    <h2 id="development">Development Guide</h2>
+    <p>For developers who want to modify the website:</p>
+
+    <h3>Local Development</h3>
+    <pre>
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+    </pre>
+
+    <h3>Customizing the Design</h3>
+    <ul>
+        <li>Main styles are in <code>assets/css/styles.css</code></li>
+        <li>Mobile responsive styles are in <code>assets/css/mobile.css</code></li>
+        <li>Color scheme can be modified by changing the CSS variables at the top of styles.css</li>
+    </ul>
+
+    <h3>Adding New Pages</h3>
+    <ol>
+        <li>Create a new HTML file in the appropriate directory</li>
+        <li>Copy the structure from an existing page</li>
+        <li>Update the content and links</li>
+        <li>Add any necessary JavaScript in main.js or contentful.js</li>
+    </ol>
+
+    <div class="highlight">
+        <p><strong>Note:</strong> If you modify the Contentful content models, you'll need to update the corresponding code in contentful.js to match your new structure.</p>
+    </div>
+</body>
+</html>

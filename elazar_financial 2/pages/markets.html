@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markets | Fershman Financial</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <img src="../assets/images/ELAZAR.png" alt="Fershman Financial" class="loader-logo">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Mouse Follower -->
+    <div class="mouse-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-logo">
+                <img src="../assets/images/ELAZAR.png" alt="Fershman Financial" class="logo">
+            </a>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="navbar-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="markets.html" class="nav-link active">Markets</a>
+                <a href="analysis.html" class="nav-link">Analysis</a>
+                <a href="policy.html" class="nav-link">Policy & Regulation</a>
+                <a href="opinion.html" class="nav-link">Opinion</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+            <div class="navbar-actions">
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Markets</h1>
+            <p class="page-description">In-depth coverage and analysis of global financial markets</p>
+        </div>
+    </section>
+
+    <!-- Market Ticker -->
+    <div class="ticker-container">
+        <div class="ticker">
+            <!-- Ticker items will be populated dynamically -->
+            <div class="ticker-item">
+                <span class="ticker-symbol">S&P 500</span>
+                <span class="ticker-value up">4,766.18</span>
+                <span class="ticker-change up">+0.41%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">NASDAQ</span>
+                <span class="ticker-value up">15,645.23</span>
+                <span class="ticker-change up">+0.63%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">DOW</span>
+                <span class="ticker-value down">36,338.30</span>
+                <span class="ticker-change down">-0.16%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">BTC/USD</span>
+                <span class="ticker-value up">46,219.50</span>
+                <span class="ticker-change up">+1.27%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">EUR/USD</span>
+                <span class="ticker-value down">1.1372</span>
+                <span class="ticker-change down">-0.05%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">GOLD</span>
+                <span class="ticker-value up">1,829.20</span>
+                <span class="ticker-change up">+0.32%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">OIL</span>
+                <span class="ticker-value up">75.21</span>
+                <span class="ticker-change up">+0.87%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">10Y-T</span>
+                <span class="ticker-value down">1.512</span>
+                <span class="ticker-change down">-0.02%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Articles List -->
+    <section class="section articles-section">
+        <div class="container">
+            <div class="articles-grid" id="markets-articles">
+                <!-- Articles will be populated dynamically -->
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">Global Markets Rally as Central Banks Signal Coordinated Policy Shift</h3>
+                        <p class="article-excerpt">Major indices surge as Federal Reserve, ECB, and Bank of Japan announce synchronized approach to combat inflation while supporting economic growth.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Jonathan Pierce</span>
+                            <span class="article-date">April 5, 2025</span>
+                        </div>
+                        <a href="../articles/global-markets-rally.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">Tech Sector Faces Valuation Reset Amid Rising Interest Rates</h3>
+                        <p class="article-excerpt">Investors reassess growth projections as borrowing costs increase, particularly impacting companies with distant profitability horizons.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Rachel Kim</span>
+                            <span class="article-date">April 4, 2025</span>
+                        </div>
+                        <a href="../articles/tech-sector-valuation-reset.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">Emerging Markets Outperform as Dollar Weakens</h3>
+                        <p class="article-excerpt">Developing economies see capital inflows accelerate as currency pressures ease and commodity prices stabilize.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Miguel Santos</span>
+                            <span class="article-date">April 2, 2025</span>
+                        </div>
+                        <a href="../articles/emerging-markets-outperform.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">Energy Transition Creates New Market Leaders</h3>
+                        <p class="article-excerpt">Traditional oil majors lose ground to renewable specialists as institutional investors reallocate capital toward sustainable energy solutions.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Emma Johnson</span>
+                            <span class="article-date">March 30, 2025</span>
+                        </div>
+                        <a href="../articles/energy-transition-market-leaders.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1579226905180-636b76d96082?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">Bond Market Signals Recession Concerns Despite Equity Optimism</h3>
+                        <p class="article-excerpt">Yield curve inversion deepens as fixed income investors position for economic slowdown despite continued strength in stock markets.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By David Chen</span>
+                            <span class="article-date">March 28, 2025</span>
+                        </div>
+                        <a href="../articles/bond-market-recession-concerns.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="article-content">
+                        <div class="article-category">Markets</div>
+                        <h3 class="article-title">Cryptocurrency Market Matures as Institutional Adoption Accelerates</h3>
+                        <p class="article-excerpt">Major financial institutions integrate digital assets into their service offerings as regulatory clarity improves across key markets.</p>
+                        <div class="article-meta">
+                            <span class="article-author">By Alex Rivera</span>
+                            <span class="article-date">March 25, 2025</span>
+                        </div>
+                        <a href="../articles/cryptocurrency-institutional-adoption.html" class="article-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="pagination-button prev" disabled><i class="fas fa-chevron-left"></i></button>
+                <span class="pagination-info">Page 1 of 3</span>
+                <button class="pagination-button next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assets/images/ELAZAR.png" alt="Fershman Financial" class="logo">
+                <p>Elite Economic Intelligence</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <a href="../index.html">Home</a>
+                    <a href="markets.html">Markets</a>
+                    <a href="analysis.html">Analysis</a>
+                    <a href="policy.html">Policy & Regulation</a>
+                    <a href="opinion.html">Opinion</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <a href="about.html">About</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email">
+                            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fershman Financial. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
