@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fershman Financial | Elite Economic Journal</title>
+    <meta name="description" content="Fershman Financial - The premium economic journal for capitalism's inner circle. Featuring in-depth market analysis, policy insights, and expert opinions.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="assets/images/ELAZAR.png" alt="Fershman Financial">
+            </div>
+            <div class="loader-text">Beyond the Headlines.</div>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Theme Toggle Button will be inserted by JavaScript -->
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <div class="navbar-logo">
+                <h1>FERSHMAN<span>FINANCIAL</span></h1>
+            </div>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-links">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="pages/markets.html" class="nav-link">Markets</a></li>
+                <li class="nav-item"><a href="pages/analysis.html" class="nav-link">Analysis</a></li>
+                <li class="nav-item"><a href="pages/policy.html" class="nav-link">Policy & Regulation</a></li>
+                <li class="nav-item"><a href="pages/opinion.html" class="nav-link">Opinion</a></li>
+                <li class="nav-item"><a href="pages/about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mobile-nav-overlay"></div>
+
+    <!-- Rest of the content remains unchanged -->
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <!-- Video background will be loaded via JavaScript -->
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-subtitle">Elite Economic Journal</div>
+                <h1 class="hero-title">Beyond the Headlines.</h1>
+                <p class="hero-description">Fershman Financial delivers premium insights into global markets, economic policy, and financial analysis for the discerning investor and economic elite.</p>
+                <div class="hero-cta">
+                    <a href="#featured" class="btn btn-primary">Explore Latest Analysis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Ticker -->
+    <section class="ticker-section">
+        <div class="container">
+            <div class="ticker-container">
+                <div class="ticker">
+                    <!-- Market data will be populated by marketData.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article Section -->
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Featured Analysis</div>
+                <h2 class="section-title">Today's Critical Insights</h2>
+                <p class="section-description">Our expert analysts deliver unparalleled depth on the most significant market movements and economic trends.</p>
+            </div>
+            <div class="featured-grid">
+                <!-- Articles will be dynamically populated from Contentful -->
+                <div id="featured-articles-container">
+                    <div class="contentful-loading">
+                        <p>Loading featured articles...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid Section -->
+    <section class="articles-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Latest Insights</div>
+                <h2 class="section-title">Market-Moving Analysis</h2>
+                <p class="section-description">Stay ahead of market shifts with our curated selection of premium financial intelligence.</p>
+            </div>
+            <div class="articles-grid">
+                <!-- Articles will be dynamically populated from Contentful -->
+                <div id="articles-grid-container">
+                    <div class="contentful-loading">
+                        <p>Loading latest articles...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="pages/analysis.html" class="btn btn-secondary">View All Analysis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Opinion Section -->
+    <section class="opinion-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Expert Perspectives</div>
+                <h2 class="section-title">Insights from Financial Luminaries</h2>
+                <p class="section-description">Our network of global financial experts provide exclusive commentary on market-moving events.</p>
+            </div>
+            <div class="opinion-slider">
+                <!-- Expert opinions will be dynamically populated from Contentful -->
+                <div id="expert-opinions-container">
+                    <div class="contentful-loading">
+                        <p>Loading expert opinions...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="pages/opinion.html" class="btn btn-secondary">More Expert Opinions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription CTA Section -->
+    <section class="subscription-section">
+        <div class="container">
+            <div class="subscription-content">
+                <div class="subscription-text">
+                    <h2 class="section-title">Join the Elite</h2>
+                    <p>Get exclusive access to premium financial intelligence and in-depth market analysis delivered directly to your inbox.</p>
+                </div>
+                <div class="subscription-form">
+                    <form>
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <h2>FERSHMAN<span>FINANCIAL</span></h2>
+            </div>
+            <!-- Horizontal Footer Links -->
+            <div class="footer-links">
+                <a href="pages/about.html">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Terms & Privacy</a>
+                <a href="#">Subscribe</a>
+                <div class="footer-social">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fershman Financial. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contentful.js"></script>
+    <script src="assets/js/marketData.js"></script>
+</body>
+</html>
