@@ -1,0 +1,22 @@
+/* Page Header Styles */
+.page-header {
+  padding: 12rem 0 var(--spacing-lg);  /* Increased top padding to prevent navbar overlap */
+  background-color: var(--bg-primary);
+  position: relative;
+  margin-top: 6rem;  /* Added margin-top to create space below navbar */
+}
+
+.page-header-content {
+  max-width: 800px;
+}
+
+.page-title {
+  font-size: 5.6rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.page-description {
+  font-size: 2rem;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
