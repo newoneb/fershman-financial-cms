@@ -1,0 +1,11 @@
+[build]
+  publish = "/"
+  
+[build.environment]
+  CONTENTFUL_SPACE_ID = "${CONTENTFUL_SPACE_ID}"
+  CONTENTFUL_ACCESS_TOKEN = "${CONTENTFUL_ACCESS_TOKEN}"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
