@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Opinion | Fershman Financial</title>
+    <meta name="description" content="Fershman Financial - Expert opinions and commentary on economic and financial matters from leading industry voices.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/mobile.css">
+    <link rel="stylesheet" href="../assets/css/loader.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/page-header.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="../assets/images/ELAZAR.png" alt="Fershman Financial">
+            </div>
+            <div class="loader-text">Beyond the Headlines.</div>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Theme Toggle Button will be inserted by JavaScript -->
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <div class="navbar-logo">
+                <h1>FERSHMAN&nbsp;<span>FINANCIAL</span></h1>
+            </div>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-links">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="markets.html" class="nav-link">Markets</a></li>
+                <li class="nav-item"><a href="analysis.html" class="nav-link">Analysis</a></li>
+                <li class="nav-item"><a href="policy.html" class="nav-link">Policy & Regulation</a></li>
+                <li class="nav-item"><a href="opinion.html" class="nav-link active">Opinion</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Opinion</h1>
+            <p class="page-description">Expert perspectives and commentary from leading financial luminaries and industry insiders.</p>
+        </div>
+    </header>
+
+    <!-- Market Ticker -->
+    <section class="ticker-section">
+        <div class="container">
+            <div class="ticker-container">
+                <div class="ticker">
+                    <!-- Market data will be populated by marketData.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid Section -->
+    <section class="articles-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Expert Perspectives</div>
+                <h2 class="section-title">Latest Opinion Pieces</h2>
+                <p class="section-description">Thought-provoking commentary and expert opinions from our network of financial luminaries.</p>
+            </div>
+            <!-- Articles will be dynamically populated from markdown files -->
+            <div id="category-articles-container">
+                <div class="contentful-loading">
+                    <p>Loading opinion articles...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription CTA Section -->
+    <section class="subscription-section">
+        <div class="container">
+            <div class="subscription-content">
+                <div class="subscription-text">
+                    <h2 class="section-title">Join the Elite</h2>
+                    <p>Get exclusive access to premium financial intelligence and in-depth market analysis delivered directly to your inbox.</p>
+                </div>
+                <div class="subscription-form">
+                    <form>
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <h2>FERSHMAN<span>FINANCIAL</span></h2>
+            </div>
+            <!-- Horizontal Footer Links -->
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Terms & Privacy</a>
+                <a href="#">Subscribe</a>
+                <div class="footer-social">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fershman Financial. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/markdownParser.js"></script>
+    <script src="../assets/js/articleLoader.js"></script>
+    <script src="../assets/js/marketData.js"></script>
+    <script src="../assets/js/netlifyIdentity.js"></script>
+</body>
+</html>
