@@ -1,0 +1,60 @@
+/* Mobile Menu Animation Fix
+   Adding smooth fade-in animation for mobile menu X icon
+*/
+
+/* Smooth transition for navbar toggle */
+.navbar-toggle {
+    transition: all 0.3s ease;
+}
+
+/* Smooth transition for navbar toggle spans */
+.navbar-toggle span {
+    transition: all 0.3s ease;
+}
+
+/* Add fade-in animation for the X icon when menu is active */
+.navbar-toggle.active {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Improve mobile menu slide-in animation */
+.navbar-links {
+    transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* Add subtle delay to menu items for cascading effect */
+.navbar-links .nav-item {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition-delay: calc(var(--item-index, 0) * 0.05s);
+}
+
+.navbar-links.active .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add overlay for mobile menu */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}

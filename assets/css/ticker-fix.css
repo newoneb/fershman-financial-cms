@@ -1,0 +1,38 @@
+/* Ticker Bar Speed Fix
+   Reducing the scroll speed for better readability
+*/
+
+/* Slow down the ticker animation */
+.ticker {
+  animation: ticker 60s linear infinite; /* Changed from 30s to 60s to reduce speed by half */
+}
+
+/* Ensure ticker items have enough spacing */
+.ticker-item {
+  padding: 0 2rem; /* Increased padding for better readability */
+}
+
+/* Pause animation on hover for easier reading */
+.ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Make ticker items more readable */
+.ticker-symbol {
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.ticker-value {
+  margin-right: 1rem;
+}
+
+/* Ensure smooth animation */
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

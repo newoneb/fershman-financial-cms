@@ -1,0 +1,35 @@
+/* About Page Spacing Fix
+   Reducing vertical gap between sections on the about page
+*/
+
+.about-section {
+  padding: var(--spacing-lg) 0; /* Reduced from var(--spacing-xl) */
+}
+
+.about-content h2 {
+  margin-top: 1.5rem; /* Reduced spacing between headings */
+  margin-bottom: 1rem;
+}
+
+/* Fix the large vertical gap between "About Fershman Financial" and "Our Mission" */
+.page-header + .about-section {
+  padding-top: 2rem; /* Reduced top padding to minimize the gap */
+}
+
+.approach-grid, .team-grid, .contact-grid {
+  margin-top: 2rem; /* Consistent spacing for all grids */
+}
+
+/* Tighten up spacing between elements */
+.about-text p {
+  margin-bottom: 1.5rem; /* Reduced paragraph spacing */
+}
+
+.about-text h2 {
+  margin-top: 2rem; /* Reduced spacing before headings */
+}
+
+/* First heading after page header needs less space */
+.about-text h2:first-of-type {
+  margin-top: 0.5rem; /* Minimal spacing for first heading */
+}
